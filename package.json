@@ -1,7 +1,7 @@
 {
   "name": "nx-cloud-skipper-action",
   "description": "Run nx commands with fallback to --no-cloud if they fail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Robson Oliveira",
     "email": "robsonos@outlook.com"
