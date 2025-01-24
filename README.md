@@ -1,9 +1,9 @@
 # Nx Cloud Skipper
 
-[![GitHub Super-Linter](https://github.com/actions/robsonos/nx-cloud-skipper-action/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
-![CI](https://github.com/actions/robsonos/nx-cloud-skipper-action/workflows/ci.yml/badge.svg)
-[![Check dist/](https://github.com/actions/robsonos/nx-cloud-skipper-action/workflows/check-dist.yml/badge.svg)](https://github.com/actions/robsonos/nx-cloud-skipper-action/workflows/check-dist.yml)
-[![CodeQL](https://github.com/actions/robsonos/nx-cloud-skipper-action/workflows/codeql-analysis.yml/badge.svg)](https://github.com/actions/robsonos/nx-cloud-skipper-action/workflows/codeql-analysis.yml)
+[![GitHub Super-Linter](https://github.com/robsonos/nx-cloud-skipper-action/actions/workflows/linter.yml/badge.svg)](https://github.com/robsonos/nx-cloud-skipper-action/actions/workflows/linter.yml)
+[![Continuous Integration](https://github.com/robsonos/nx-cloud-skipper-action/actions/workflows/ci.yml/badge.svg)](https://github.com/robsonos/nx-cloud-skipper-action/actions/workflows/ci.yml)
+[![Check Transpiled JavaScript](https://github.com/robsonos/nx-cloud-skipper-action/actions/workflows/check-dist.yml/badge.svg)](https://github.com/robsonos/nx-cloud-skipper-action/actions/workflows/check-dist.yml)
+[![CodeQL](https://github.com/robsonos/nx-cloud-skipper-action/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/robsonos/nx-cloud-skipper-action/actions/workflows/codeql-analysis.yml)
 [![Coverage](./badges/coverage.svg)](./badges/coverage.svg)
 
 This action runs `npx nx` commands with automatic fallback to `--no-cloud` if
@@ -29,7 +29,7 @@ jobs:
       - name: Run CI on affected projects
         uses: robsonos/nx-cloud-skipper-action
         with:
-          command: 'affected -t lint test build'
+          command: affected -t lint test build
 ```
 
 The above will run `npx nx affected -t lint test build` and if the default
